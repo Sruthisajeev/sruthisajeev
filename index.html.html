@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sruthi S</title>
+    <link rel="icon" href="person.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+  <script >
+    function validate(){
+  
+  var user1=document.f1.username.value;
+  var place1=document.f1.place.value;
+  var email=document.f1.email.value;
+  var mobile=document.f1.mobile.value;
+  var status=false; 
+  
+      if (user1=="null" || user1=="")
+      {
+          document.getElementById("user").innerHTML="Please enter the username";
+          status=false;
+      }
+      if (place1=="null" || place1=="")
+      {
+          document.getElementById("place").innerHTML="Please enter the Place";
+          status=false;
+      }
+      if (email=="null" || email=="")
+      {
+          document.getElementById("email").innerHTML="Please enter the Email";
+          status=false;
+      }
+      if ((mobile=="null" || mobile=="") && (mobile.length<10)) 
+      {
+          document.getElementById("mobile").innerHTML="Please enter 10 digit phone number";
+          status=false;
+  
+      }
+      else{
+        status=true;
+        document.getElementById("passwordlocation").innerHTML=" "
+      }
+      return status;
+  }
+  
+  </script>
+<header class="fixed-top " style="height:90px;" >
+      
+    <nav class="navbar navbar-expand-sm navbar-light bg-info">
+      <div class="container-fluid ">
+      <h1 class="navbar-brand text-white " >SRUTHI S</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#experiance">Experience</a>
+        </li>	
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#contact">Contact</a>
+        </li>		
+        </ul>		  
+      </div>
+      </div>
+    </nav>
+  
+</header>
+
+
+<section class="p-4" id="home-section">
+  <br><br><br>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="sruthi.jpg.jpg" alt="" class="img-fluid rounded-circle">
+
+            </div>
+            <div class="col-md-6">
+<h4 class="pt-4">Student at Trylogic Soft Solutions PVT.LTD <br>
+    Trivandram,Kerala,India</h4>
+    <p>"You are the average of 5 people you hang around"</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light p-5 education-section" id="education">
+  <br>  <br>
+    <div class="container">
+        <h1 class="text-center">Education</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top" src="spc.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">SSLC</h5>
+                      <p class="card-text">Govt HSS Ottakkal,Kollam,Kerala</p>
+                      </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top" src="nss.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Plus Two</h5>
+                      <p class="card-text">Govt HSS Ottakkal,Kollam,Kerala</p>
+                      </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top" src="ncc.jpg" style="height:12rem;"alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Diploma In Computer Science</h5>
+                      <p class="card-text">Engneer's Trainig center,Cinnakada,Kollam,Kerala</p>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-white p-5 Experience-section" id="experiance">
+  <br>  <br>
+    <div class="container">
+        <h1 class="text-center">Experience</h1>
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="card" style= "width: 15rem;height:20em;">
+            <img src="data:image/png;base64,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"
+            class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Trylogic Soft Solutions PVT.LTD</h5>
+              <p class="card-text">User Interface Developer</p>
+              </div>
+          </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style= "width: 15rem;height:20em;">
+            <img src="https://www.claysys.com/app/themes/claysys-2019/assets/images/claysys-logo.png"
+            class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Clayasys Technologies</h5>
+              <p class="card-text">RPA Developer</p>
+              </div>
+          </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card" style= "width: 15rem;height:20em;">
+            <img src="https://yt3.ggpht.com/ytc/AKedOLSbp1rK27PTAlCAVienup1siiBinnCv5RqS7fVg3Q=s900-c-k-c0x00ffffff-no-rj"
+            class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">One Team Solutions</h5>
+              <p class="card-text">Python </p>
+              </div>
+          </div>
+    </div>
+
+
+</div>
+    </div>
+</section>
+
+<section class="p-5 bg-light Contact-section" id="contact">
+<div class="container">
+  <h1 class="text-center">Contact</h1>
+    <div class="row">
+      <div class="col-md-12">
+        <form name="f1" onsubmit="return validate()">
+          <div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputName" id="useme">Name</label>
+                <input type="text" name="username" class="form-control" id="inputName" placeholder="Name">
+                <span id="user" style="color:red"></span>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Place</label>
+                <input type="text"  name="place"class="form-control" id="inputPassword4" placeholder="Place">
+                <span id="place" style="color:red"></span>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="inputEmail">Email</label>
+                <input type="email" name="email" class="form-control" id="inputPassword4" placeholder="Email">
+                <span id="email" style="color:red"></span>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputMobile">Mobile</label>
+                <input type="number" name="mobile" class="form-control" id="inputMobile" placeholder="Mobile">
+                <span id="mobile" style="color:red"></span>
+              </div>
+            </div>
+           
+            <div class="form-group col-md-6">
+              <label for="inputMsg">Message</label>
+              <textarea class="form-control"cols="30" rows="10"  id="inputMsg" placeholder="Type your message here..."></textarea>
+            </div>
+            
+          </div>
+            <button type="submit"    class="btn btn-primary" style="width:100%;">submit</button>
+          </form>
+        </div>
+      </div>
+</div>
+</section>
+<footer class="bg-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center text-white">
+        <i class="fa-brands fa-facebook-square"></i>
+
+        <p>Copyrights</p>
+      </div>
+    </div>
+
+
+  </div>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
+
